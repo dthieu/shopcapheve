@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiệm cà phê VỀ</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png" />
 </head>
@@ -20,17 +21,141 @@
             <ul id="navbar">
                 <li><a href="index.html">Trang Chủ</a></li>
                 <li><a href="shop.html">Sản Phẩm</a></li>
-                <li><a href="blog.html">Câu Chuyện Cà Phê</a></li>
+                <li><a href="blog.html">Blog Cà Phê</a></li>
                 <li><a href="about.html">Về "Nguồn"</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
 
     </section>
 
+    <section id="page-header" class="cart-header">
+        
+        <h2>#order</h2>
 
+        <p>Đặt hàng ngay nào bạn ơi! 😎</p>
+    
+    </section>
 
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Xoá</td>
+                    <td>Ảnh Sản Phẩm</td>
+                    <td>Sản Phẩm</td>
+                    <td>Giá</td>
+                    <td>Số Lượng</td>
+                    <td>Tổng</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/arabica.png" alt=""></td>
+                    <td>Cà phê Arabica</td>
+                    <td>150.000 VND</td>
+                    <td><input type="number" value="1"></td>
+                    <td>150.000 VND</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/robusta.png" alt=""></td>
+                    <td>Cà phê Robusta</td>
+                    <td>140.000 VND</td>
+                    <td><input type="number" value="1"></td>
+                    <td>140.000 VND</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Áp dụng mã giảm giá</h3>
+            <div>
+                <input type="text" placeholder="Nhập mã giảm giá...">
+                <button class="normal">Áp dụng</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Đơn hàng</h3>
+            <table>
+                <tr>
+                    <td>Giá trị đơn hàng</td>
+                    <td>290.000 VND</td>
+                </tr>
+                <tr>
+                    <td>Vận chuyển</td>
+                    <td>Miễn phí</td>
+                </tr>
+                <tr>
+                    <td><strong>Tổng</strong></td>
+                    <td><strong>290.000 VND</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Đặt hàng</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/mylogo.png" alt="logo">
+            <h4>Liên hệ</h4>
+            <p><strong>Địa chỉ:</strong> Thôn Phú Thái, Xã Hàm Trí, Hàm Thuận Bắc, Bình Thuận, Phan Thiết</p>
+            <p><strong>Điện thoại:</strong> 033 511 3711</p>
+            <p><strong>Giờ phục vụ:</strong> 07:00 - 17:00, Thứ 2 - Thứ 7</p>
+            <div class="follow">
+                <h4>Theo dõi VỀ qua các kênh</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Oder</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+        </div>
+
+    </footer>
 
     <script src="script.js"></script>
 </body>
