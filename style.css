@@ -518,6 +518,15 @@ footer a:hover {
     color: #fff;
 }
 
+#pricetable {
+
+}
+
+#pricetable img {
+    width: 100%;
+    height: auto;
+}
+
 #pagination {
     text-align: center;
 }
@@ -612,6 +621,7 @@ footer a:hover {
 
 #blog .blog-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     position: relative;
@@ -619,24 +629,39 @@ footer a:hover {
 }
 
 #blog .blog-img {
-    width: 50%;
-    margin-right: 40px;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-#blog img {
+#blog img,
+#blog .group_img img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 500px;
+    object-fit: contain;
 }
 
 #blog .blog-details {
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
+}
+
+#blog .group_img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* handle overflow image */
+}
+
+#blog .blog_sub_content {
+    /* display: none; */
 }
 
 #blog .blog-details a {
     text-decoration: none;
     font-size: 11px;
     color: #000;
+    cursor: pointer;
     font-weight: 700;
     position: relative;
     transition: 0.3s;
@@ -1036,6 +1061,13 @@ footer a:hover {
     #form-details form {
         width: 50%;
     }
+
+    /* Blog post */
+    #blog img {
+        width: 100%;
+        height: 300px;
+        object-fit: fill;
+    }
 }
 
 /* define content for small width screen */
@@ -1121,9 +1153,15 @@ footer a:hover {
     #blog .blog-img {
         width: 100%;
         margin-right: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     
+    #blog img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+
     #blog .blog-details {
         width: 100%;
     }
