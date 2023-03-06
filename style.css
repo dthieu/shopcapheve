@@ -687,9 +687,10 @@ footer a:hover {
 
 #blog .blog-box h1 {
     position: absolute;
-    top: -55px;
+    /* top: -55px; */
+    top: -30px;
     left: 0;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     color: #c9cbce;
     z-index: -9;
@@ -954,6 +955,13 @@ footer a:hover {
     border: 1px solid #e2e9e1;
     padding: 10px;
     font-size: 13px;
+}
+
+#subtotal input {
+    padding: 10px 10px;
+    border: 0;
+    width: 100%;
+    color: blue;
 }
 
 /* Start Media Query */
