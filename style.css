@@ -518,10 +518,6 @@ footer a:hover {
     color: #fff;
 }
 
-#pricetable {
-
-}
-
 #pricetable img {
     width: 100%;
     height: auto;
@@ -654,7 +650,7 @@ footer a:hover {
 }
 
 #blog .blog_sub_content {
-    /* display: none; */
+    display: none;
 }
 
 #blog .blog-details a {
@@ -688,9 +684,9 @@ footer a:hover {
 #blog .blog-box h1 {
     position: absolute;
     /* top: -55px; */
-    top: -30px;
+    top: -40px;
     left: 0;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     color: #c9cbce;
     z-index: -9;
@@ -1076,6 +1072,16 @@ footer a:hover {
         height: 300px;
         object-fit: fill;
     }
+
+    #blog .blog-box h1 {
+        position: absolute;
+        /* top: -55px; */
+        top: -60px;
+    }
+
+    /* #blog .blog-details {
+        width: 100%;
+    } */
 }
 
 /* define content for small width screen */
